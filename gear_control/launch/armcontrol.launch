@@ -1,0 +1,11 @@
+<launch>
+  <node name="pick_gear_controller_node" pkg="gear_control" type="arm_controller.py" output="screen" />
+  <node name="arm_state_1" pkg="gear_control" type="state.py" output="screen" />
+
+  <node name="put_gear_on_tray"   pkg="gear_control" type="move2tray.py"   output="screen" />
+  <node name="put_gear_on_tray_2" pkg="gear_control" type="move2tray_2.py" output="screen" />
+  <node name="put_gear_on_tray_3" pkg="gear_control" type="move2tray_3.py" output="screen" />
+  <node name="put_gear_on_tray_4" pkg="gear_control" type="move2tray_4.py" output="screen" />
+  
+  <node name="back_initial_position" pkg="gear_control" type="back2zero.py" output="screen" />
+</launch>
